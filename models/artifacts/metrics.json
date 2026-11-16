@@ -1,0 +1,60 @@
+{
+  "trained_at": "2026-11-09T14:07:32",
+  "model_type": "RandomForestClassifier",
+  "n_estimators": 220,
+  "training_rows": 2000,
+  "test_rows": 500,
+  "feature_columns": [
+    "attendance_percentage",
+    "internal_examination_marks",
+    "assignment_score",
+    "previous_semester_performance",
+    "study_hours"
+  ],
+  "classes": [
+    "At Risk",
+    "Average",
+    "Excellent",
+    "Good"
+  ],
+  "accuracy": 0.974,
+  "precision_weighted": 0.9741300201544075,
+  "recall_weighted": 0.974,
+  "f1_weighted": 0.9739652626967749,
+  "classification_report": "              precision    recall  f1-score   support\n\n     At Risk       0.98      0.99      0.98       119\n     Average       0.96      0.98      0.97       125\n   Excellent       0.98      0.95      0.96        85\n        Good       0.98      0.96      0.97       171\n\n    accuracy                           0.97       500\n   macro avg       0.97      0.97      0.97       500\nweighted avg       0.97      0.97      0.97       500\n",
+  "confusion_matrix": [
+    [
+      118,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      123,
+      0,
+      2
+    ],
+    [
+      3,
+      1,
+      81,
+      0
+    ],
+    [
+      0,
+      4,
+      2,
+      165
+    ]
+  ],
+  "feature_importances": {
+    "attendance_percentage": 0.3155528540754841,
+    "internal_examination_marks": 0.33486018099804266,
+    "assignment_score": 0.1962375446929864,
+    "previous_semester_performance": 0.1198772665994538,
+    "study_hours": 0.03347215363403308
+  },
+  "data_source": "synthetic_demonstration",
+  "disclaimer": "Metrics are measured on a held-out split of synthetic demonstration data. They are not a claim of production accuracy on real institutional records."
+}

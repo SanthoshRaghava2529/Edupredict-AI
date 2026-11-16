@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.idea/
+.vscode/
+models/artifacts/*.joblib
+database/student_performance.db
+reports/*.pdf
+reports/*.csv
+data/*.csv
